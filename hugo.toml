@@ -4,7 +4,11 @@ title = 'My New Hugo Site'
 theme = "PaperMod"
 
 [markup.goldmark.extensions.passthrough]
-enable = true
+    enable = true
 [markup.goldmark.extensions.passthrough.delimiters]
-block = [['\[', '\]'], ['$$', '$$']]
-inline = [['\(', '\)'], ['$', '$']]
+    block = [['\[', '\]'], ['$$', '$$']]
+    inline = [['\(', '\)'], ['$', '$']]
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
